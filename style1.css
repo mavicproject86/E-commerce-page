@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: 'poppins',sans-serif;
+}
+.shopping-cart{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 20%;
+    right: -20%;
+    transition: 0.9s;
+    top: 0;
+    position: fixed;
+    float: right;
+    top: 0;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #878787;
+    color: white;
+}
+.shopping-cart>*{
+    margin: 0.5rem;
+}
+
+.open{
+    right: 0;
+}
+
+main .button{
+    display: flex;
+    flex-direction: row;
+}
+main button:nth-child(even){
+    background-color: yellow;
+}
+main .shopping-cart .button button{
+    width: 50%;
+    font-size: medium;
+    padding: .5rem 0;
+    border: none;
+}
+main .shopping-cart .cartproducts{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 90vh;
+    overflow: scroll;
+}
+main .shopping-cart .cartproducts .product-cart{
+    display: grid;
+    grid-template-columns: 52px minmax(120px, 1fr) 50px;
+    box-sizing: border-box;
+    padding: 1px;
+    height: 52px;
+    margin: 0.5rem 0;
+    justify-content: space-around;
+}
+
+
+main .shopping-cart .cartproducts .product-cart>*{
+    margin:0 0.5rem;
+}
+
+main .shopping-cart .cartproducts::-webkit-scrollbar{
+    display: none;
+}
+main .shopping-cart .cartproducts .product-cart img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    object-fit: contain;
+}
+main .shopping-cart .cartproducts .product-cart div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 52px;
+}
+.product-cart div:nth-child(2) {
+    flex-grow: 1;
+    text-align: center;
+}
+main .shopping-cart .cartproducts .product-cart div p{
+        font-size: x-small;
+}
+main .shopping-cart .cartproducts .product-cart pre{
+    font-size: x-small;
+    margin: auto 0;
+}
+main .shopping-cart .cartproducts .product-cart #incre{
+    display: flex;
+    flex-direction: row;
+    height: 52px;
+    align-items: center;
+    justify-content: space-around;
+}
+main .shopping-cart .cartproducts .product-cart #incre>*{
+    margin: 0 0.3rem;
+}
+
+
+
+body{
+    width: 100%;
+    transition: 0.9s;
+    /* border: 2px solid black; */
+    background-color:aliceblue;
+}
+.mavic{
+    width: 79%;
+    transition: 0.9s;
+}
+nav .cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+nav .cart :nth-child(2){
+    margin: 0 .5rem;
+}
+nav .cart :nth-child(1){
+    margin: 0 0.5rem;
+}
+
+nav .cart :nth-child(3){
+    position: absolute;
+    left: 24%;
+    font-size: xx-small;
+    color: white;
+    top: 22%;
+    background-color: red;
+    padding: .1rem;
+    border-radius: 50%;
+}
+main .button{
+    display: flex;
+    flex-direction: row;
+}
+main button:nth-child(even){
+    background-color: yellow;
+}
+main .shopping-cart .button button{
+    width: 50%;
+    font-size: medium;
+    padding: .5rem 0;
+    border: none;
+}
+
+/* abover are copied from style.css */
+
+nav{
+    display: flex;
+    width: 98%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
+    background: transparent;
+}
+nav img{
+    width: 10rem;
+    height: 2rem;
+}
+nav .home{
+    margin-left: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .home a{
+    margin-left: .5rem;
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+}
+
+section img{
+    width: 100%;
+    height: 15rem;
+    /* position: relative; */
+    top: 0;
+}
+/* main */
+
+.container{
+    margin:2rem 0px;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin: 0 auto;
+}
+.container button{
+    background-color: yellow;
+}
+.productlist{
+    display: grid;
+    grid-template-columns: repeat(6,minmax(150px,1fr));
+    gap: 2%;
+    margin: 1rem auto;
+    width: 98%;
+}
+.productlist .item img{
+    width: 100%;
+}
+.item {
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    justify-content: center;
+    text-align: center;
+    height: 30rem;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.item button{
+    height: 2rem;
+    border: 2px solid black;
+    outline: none;
+}
+.container .item img:hover{
+    background-color: rgba(0, 0, 0, 0.408);
+    transform: scale(1.05);
+    transition: 0.9s;
+}
+.container .item img{
+    width: 100%;
+    height: 15rem;
+    margin-top: 0.5rem;
+    object-fit: contain;
+    background-color: rgba(230, 230, 215, 0.9);
+    border-radius: 8px;
+    filter: drop-shadow(0 0 10px 5px rgb(68, 68, 68));
+    margin: .5rem 0;
+}
+
+.container .item >*{
+    margin: .5rem 0;
+}
+
+/* footer style from style.css */
+footer{
+    width:100%;
+    box-sizing: border-box;
+    padding: 5%;
+    margin-top: 5rem;
+    background-color: #212121;
+    height: 50vh;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+.footer > div{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.footer > div h4{
+    color: #878787;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: medium;
+    margin: .5rem 0;
+}
+
+.footer div >*{
+    margin: 0.2rem 0;
+    letter-spacing: 1px;
+}
+.footer .social a{
+    text-decoration: none;
+    color: white;
+    display: grid;
+    grid-template-columns: 20px auto;
+    align-items: center;
+
+}
+.footer .social h4{
+    grid-area: 1 / span 2;
+}
+.footer .social{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.social p{
+    margin-left: .3rem;
+}
+.footer > div p:hover{
+    text-decoration: underline ;
+}
