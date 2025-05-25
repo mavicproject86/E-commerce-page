@@ -1,5 +1,5 @@
 // fetch('https://dummyjson.com/products')
-
+console.log('mavic');
 let body = document.querySelector('body');
 let cart = document.querySelector('.cart');
 let close = document.querySelector('#close');
