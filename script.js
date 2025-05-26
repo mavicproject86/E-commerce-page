@@ -1,5 +1,6 @@
 // fetch('https://dummyjson.com/products')
 console.log('gates');
+document.addEventListener('DOMContentLoaded', () => {
 let body = document.querySelector('body');
 let cart = document.querySelector('.cart');
 let close = document.querySelector('#close');
@@ -442,3 +443,5 @@ window.addEventListener('DOMContentLoaded',()=>{
         });
     }
 })
+});
+    
